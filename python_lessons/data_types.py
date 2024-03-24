@@ -4,15 +4,15 @@ import math
 # Literal assignament
 first = "Solange"
 last = "Batista"
-#print(type(first))
-#print(type(first) == str)
-#print(isinstance(first, str))
+print(type(first))
+print(type(first) == str)
+print(isinstance(first, str))
 
 # Constructor functions
-# pizza = str("Pepperoni")
-# print(type(pizza))
-# print(type(pizza) == str)
-# print(isinstance(pizza, str))
+pizza = str("Pepperoni")
+print(type(pizza))
+print(type(pizza) == str)
+print(isinstance(pizza, str))
 
 # Concatenation
 fullname = first + " " + last
