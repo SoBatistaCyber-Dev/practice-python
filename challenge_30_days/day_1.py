@@ -17,3 +17,5 @@
     Current Number 8 Previous Number  7  Sum:  15
     Current Number 9 Previous Number  8  Sum:  17
 '''
+
+# Your solution goes here <- delete this
