@@ -19,3 +19,14 @@
 '''
 
 # Your solution goes here <- delete this
+
+num = 10
+
+previous_number = 0
+
+print("Printing current and previous number sum in a range(10)")
+
+for current_number in range(num):
+    print("Current Number", current_number, "Previous Number", previous_number, "Sum:", current_number + previous_number)
+    previous_number = current_number
+    
