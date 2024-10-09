@@ -9,3 +9,18 @@
 '''
 
 # Your solution goes here <- delete this 
+
+previous = 1
+previous_2 = 0
+element = 50
+
+for i in range(element):
+    if(i == 0):
+        print(0)
+    elif(i == 1):
+        print(previous)
+    else:
+        sum = previous + previous_2
+        print(sum)
+        previous_2 = previous
+        previous = sum
