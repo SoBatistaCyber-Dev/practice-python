@@ -20,6 +20,7 @@
 
 # Your solution goes here <- delete this
 
+
 def calculate(num = 10):
     previous_number = 0
     print("Printing current and previous number sum in a range(10)")
