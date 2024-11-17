@@ -1,3 +1,3 @@
 '''
-    Write a Python program to validate an IP address.
+    Write a Python function that takes a sequence of numbers and determines whether all the numbers are different from each other. 
 '''
