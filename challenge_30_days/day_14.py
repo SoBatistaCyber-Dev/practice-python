@@ -1,3 +1,14 @@
 '''
-    Write a Python program that determines whether a given number (accepted from the user) is even or odd, and prints an appropriate message to the user. 
+    Sum of List
+
+    Write a function called sum_list that takes a list of numbers and returns the sum of all the numbers in the list.
+
+    Example Input/Output:
+
+    # Input:
+    numbers = [1, 2, 3, 4, 5]
+    print(sum_list(numbers))
+
+    # Output:
+    15
 '''
