@@ -4,3 +4,12 @@
 
 Challenge 2: 
 """
+
+def check_even_or_odd(x):
+    if x % 2 == 0:
+        print("That's a even number!")
+    else:
+        print("That's a odd number!")
+
+x = int(input("Enter a number to see if it's even or odd: "))
+check_even_or_odd(x)
