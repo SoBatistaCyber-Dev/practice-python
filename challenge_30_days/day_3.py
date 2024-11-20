@@ -4,15 +4,9 @@
 """
 
 def vowel(letter):
-    if letter == "a":
-        print("That's a vowel!")
-    elif letter == "e":
-        print("That's a vowel!")
-    elif letter == "i":
-        print("That's a vowel!")
-    elif letter == "o":
-        print("That's a vowel!")
-    elif letter == "u":
+
+    the_vowels = "aeiou"
+    if letter == the_vowels:
         print("That's a vowel!")
     else:
         print("That's not a vowel!")
