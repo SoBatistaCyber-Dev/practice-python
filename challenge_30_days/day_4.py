@@ -31,3 +31,16 @@
 
     False
 '''
+
+def check_for_a_value_in_list(value_to_search, users_list):
+    if value_to_search in users_list:
+        print(True)
+    else:
+        print(False)
+
+value_to_search = input("Enter the value that you want to search for on the list: ")
+list_of_values = input("Enter a list of numbers (make sure to enter a space between each number): ")
+
+users_list = list_of_values.split()
+
+check_for_a_value_in_list(value_to_search, users_list)
