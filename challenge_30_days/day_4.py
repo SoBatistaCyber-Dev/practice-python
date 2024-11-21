@@ -31,3 +31,24 @@
 
     False
 '''
+
+def convert_list_elements_to_float(lst):
+    new_list = []
+    for i in lst:
+        new_list += [float(i)]
+    return new_list
+
+def check_for_a_value_in_list(value_to_search, users_list):
+    if value_to_search in users_list:
+        print(True)
+    else:
+        print(False)
+
+value_to_search = float(input("Enter the value that you want to search for on the list: "))
+list_of_values = input("Enter a list of numbers (make sure to enter a space between each number): ")
+
+users_list = list_of_values.split()
+
+new_list = convert_list_elements_to_float(users_list)
+
+check_for_a_value_in_list(value_to_search, new_list)
