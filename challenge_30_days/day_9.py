@@ -18,3 +18,19 @@
 
     Reversed number: 54321
 '''
+
+def reverse_number(number):
+    # This will try to take the user input and reverse it if it's an integer.
+    try:
+        # First it attempts to convert the input to an integer
+        number = int(number)
+        # Then reverses the integer and prints it
+        number_being_reversed = int(str(number)[::-1])
+        print("Reversed number:", number_being_reversed)
+
+    # This exist for the case the user inserts a string instead of an integer.
+    except:
+        print("Invalid input!")
+
+number = input("Enter a positive integer: ")
+reverse_number(number)
