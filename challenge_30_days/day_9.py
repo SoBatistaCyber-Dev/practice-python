@@ -18,3 +18,11 @@
 
     Reversed number: 54321
 '''
+
+def reverse_number(number_being_reversed):
+    print("Reversed number:", number_being_reversed)
+
+number = int(input("Enter a positive integer: "))
+number_being_reversed = str(number)[::-1]
+# This converts the number to a string and reverses it.
+reverse_number(number_being_reversed)
