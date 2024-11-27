@@ -25,47 +25,11 @@ def income_tax(income):
             second_bracket_tax = 10000 * 0.1    
             if income > 0:
                 third_bracket_tax = income * 0.2
-            print(first_bracket_tax + second_bracket_tax + third_bracket_tax)
+            print("Your taxes are: $", int(first_bracket_tax + second_bracket_tax + third_bracket_tax))
         else:    
-            print("Your taxes are: ", first_bracket_tax + (income * 0.1))
+            print("Your taxes are: $", int(first_bracket_tax + (income * 0.1)))
     else:
-        print("Your Taxes are: ", income * 0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    """
-    first_deduction = min(10000, income)
-    income -= first_deduction
-    print(income)
-    first_bracket_tax = first_deduction * 0
-    print(first_bracket_tax)
-
-    second_deduction = min(10000, income)
-    income -= second_deduction
-    print(income)
-    second_bracket_tax = second_deduction * 0.1
-    print(second_bracket_tax)
-    
-    third_deduction = income
-    third_bracket_tax = third_deduction * 0.2
-    print(third_bracket_tax)
- 
-    print("Your taxes are:", int(first_bracket_tax + second_bracket_tax + third_bracket_tax))
-    """
-
+        print("Your taxes are: $", int(income * 0))
 
 income = int(input("Enter your income: "))
 income_tax(income)
