@@ -15,3 +15,9 @@
         10 20 30 40 50 60 70 80 90 100 
         
 '''
+def multiple_table():
+    numbers = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+    for i in numbers:
+        print(1 * i, 2 * i, 3 * i, 4 * i, 5 * i, 6 * i, 7 * i, 8 * i, 9 * i, 10 * i)
+        
+multiple_table()
