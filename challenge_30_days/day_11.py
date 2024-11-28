@@ -15,7 +15,17 @@
         10 20 30 40 50 60 70 80 90 100 
         
 '''
+# One way of doing this is:
+def multiple_table():
+    numbers = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+    for i in numbers:
+        print(1 * i, 2 * i, 3 * i, 4 * i, 5 * i, 6 * i, 7 * i, 8 * i, 9 * i, 10 * i)
+        
+multiple_table()
 
+
+# Other way is this one, but not to good for a lot of numbers because you need to do it by hand.  
+"""
 def multiple_table():
     print("-----------------------------------------")
     print("|          Multiplication table         |")
@@ -40,5 +50,5 @@ def multiple_table():
     print("-----------------------------------------")
     print("|10 |20 |30 |40 |50 |60 |70 |80 |90 |100|")
     print("-----------------------------------------")
-
-multiple_table()
+multiple_table():
+"""
