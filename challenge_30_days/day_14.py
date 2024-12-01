@@ -12,3 +12,26 @@
     # Output:
     15
 '''
+import re
+import sys
+
+def sum_of_list(numbers):
+    
+    try:
+        removed_commas = re.sub(",", " ", numbers)
+        convert_lst = removed_commas.split()
+        sum = 0
+        for i in convert_lst:
+            sum += int(i)
+        return sum
+    except ValueError:
+        print("That's not a number!")
+        sys.exit(1)    
+
+numbers = input("Enter a list of numbers: ")
+print(sum_of_list(numbers))
+
+
+
+
+
