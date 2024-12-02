@@ -19,3 +19,12 @@
 
     Number of vowels: 3
 '''
+import re
+
+def count_the_vowels(user_string):
+    vowels = '[aeiouAEIOU]' # Matches any single vowel, case-insensitive
+    count_vowels = len(re.findall(vowels, user_string))            
+    return count_vowels
+
+user_string = input("Enter a sting: ")
+print("Number of vowels:", count_the_vowels(user_string))
