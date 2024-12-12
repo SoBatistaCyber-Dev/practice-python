@@ -8,4 +8,3 @@ if sys.byteorder == "big": # Verifies if the system's byte order (aka endianness
     print("The system is big-endian.")
 else:
     print("The system is little-endian.")
-
