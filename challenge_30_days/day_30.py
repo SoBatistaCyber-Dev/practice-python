@@ -29,3 +29,24 @@
         Accessing / still returns "Hello, World!".
         Accessing / with ?name=Alice should return "Hello, Alice!".
 '''
+
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+def reverse_string(input_string):
+    return input_string[::-1]
+
+@app.route("/")
+def home():
+    name = request.args.get("name", "World")
+    return f"Hello {name}!", 200
+    
+@app.route("/reverse-string")
+def reverse():
+    string_to_reverse = request.args.get("string", "World")
+    return f"This is the reverted string: {reverse_string(string_to_reverse)}!", 200
+
+
+if __name__ == "__main__":
+    app.run(debug=True )
